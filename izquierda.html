@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Menú de Cartas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(120, 129, 253, 0.863);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .button-container {
+            display: flex;
+            align-items: center;
+            background-color: #8A2BE2; /* Color morado para el botón */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px 0;
+            width: 300px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .button-container:hover {
+            transform: translateY(-5px); /* Eleva el botón */
+            background-color: #FF1493; /* Color "mágico" al hacer hover */
+        }
+        .button-container.active {
+            background-color: #FF1493; /* Mantiene el color "mágico" cuando se hace clic */
+            transform: translateY(0); /* Vuelve a su posición original */
+        }
+        .button-image {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-image img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .button-text {
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="INTENTO 6/paginawebcartas/paginawebcartas.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/menu de cartas.jpg" alt="Menú de cartas">
+        </div>
+        <div class="button-text">
+            Menú de cartas
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/Quimica.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/reacciones-quimicas-oxidacion-reduccion.jpg" alt="Menú de cartas">
+        </div>
+        <div class="button-text">
+            Quimica-Reacciones Oxido Reducción.
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/Biologia.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/tipos_de_tejidos_animales_2334_orig.jpg" alt="Menú de cartas">
+        </div>
+        <div class="button-text">
+            Biologia-Información General
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/coralabanico.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/coralabanico.jpeg" alt="Coral Abanico">
+        </div>
+        <div class="button-text">
+            Coral Abanico
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/coralcerebro.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/coralcerebro.jpeg" alt="Coral Cerebro">
+        </div>
+        <div class="button-text">
+            Coral Cerebro
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/coraldefuego.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/coraldefuego.jpeg" alt="Coral de Fuego">
+        </div>
+        <div class="button-text">
+            Coral de Fuego
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/pezangel.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/pezangel.jpeg" alt="Pez Ángel">
+        </div>
+        <div class="button-text">
+            Pez Ángel
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/pezespada.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/pezespada.jpeg" alt="Pez Espada">
+        </div>
+        <div class="button-text">
+            Pez Espada
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/pezmantequilla.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/pezmantequilla.jpg" alt="Pez Mantequilla">
+        </div>
+        <div class="button-text">
+            Pez Mantequilla
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/pezpayaso.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/pezpayaso.jpeg" alt="Pez Payaso">
+        </div>
+        <div class="button-text">
+            Pez Payaso
+        </div>
+    </a>
+    <a href="INTENTO 6/paginawebcartas/tiburcio.html" target="dere" class="button-container" onclick="handleClick(this)">
+        <div class="button-image">
+            <img src="INTENTO 6/paginawebcartas/IMAGENES/tiburonblanco.jpeg" alt="Tiburón">
+        </div>
+        <div class="button-text">
+            Tiburón
+        </div>
+    </a>
+
+    <script>
+        function handleClick(element) {
+            // Remueve la clase 'active' de todos los botones
+            document.querySelectorAll('.button-container').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            // Agrega la clase 'active' al botón clickeado
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

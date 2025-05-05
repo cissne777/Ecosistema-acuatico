@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Arrecife de Coral</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(25, 221, 255, 0.384);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Evita el scroll horizontal */
+            position: relative;
+        }
+        .marquesina {
+            background-color: rgba(25, 221, 255, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto; /* Centra la marquesina horizontalmente */
+            position: relative;
+            z-index: 1;
+            width: fit-content; /* Ajusta el ancho al contenido */
+        }
+        .marquesina h1 {
+            font-size: 2.5em; /* Aumenta el tamaño del texto */
+            margin: 0;
+            animation: vaYVen 20s linear infinite; /* Animación de movimiento lento */
+        }
+        @keyframes vaYVen {
+            0% {
+                transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+            }
+            100% {
+                transform: translateX(-100%); /* Termina fuera de la pantalla a la izquierda */
+            }
+        }
+        .arrecife {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none; /* Permite que los clics pasen a través de las imágenes */
+        }
+        .arrecife img {
+            position: absolute;
+            width: 150px; /* Reduce el tamaño de las imágenes */
+            height: auto;
+            z-index: 0;
+        }
+        .arrecife img.left {
+            left: 10%; /* Mueve la imagen izquierda hacia adentro */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .arrecife img.right {
+            right: 10%; /* Mueve la imagen derecha hacia adentro */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="arrecife">
+        <img src="https://static.vecteezy.com/system/resources/previews/010/838/155/non_2x/cute-cartoon-sea-animal-fish-character-free-png.png" alt="Arrecife Izquierdo" class="left">
+        <img src="INTENTO 6/paginawebcartas/IMAGENES/—Pngtree—little cartoon fish_18130998.png" alt="Arrecife Derecho" class="right">
+    </div>
+    <div class="marquesina">
+        <h1>Arrecife de coral</h1>
+    </div>
+</body>
+</html>
